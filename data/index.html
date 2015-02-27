@@ -56,20 +56,21 @@
   </style>
 </head>
 <body>
+  <h3>Sample implementation to load data using Custom Protocol Handler (Safe: schema detection)</h3>
   <div class="wrapper">
     <div class="layer">
-      <a href="safe:image.png" target="_blank">Safe Protcol used on Anchor Tag</a>
+      <a href="safe:image.png" target="_blank">Anchor Tag - loads image on new tab</a>
     </div>
     <div class="layer">
-      <p>Safe Protocol loading from image tag (safe:image.png)</p>
+      <p>Image tag using SAFE: - &lt;img src="safe:image.png&gt;</p>
       <img src="safe:image.png">
     </div>
     <div class="layer">
-      <p>Safe Protocol loading from css ( background-image: url("safe:image.png") )</p>
+      <p>Loading background using style - ( background-image: url("safe:image.png") )</p>
       <div class="cssTest"></div>
     </div>
     <div class="layer">
-      <p>JS-Ctypes: Call native code to add two number.</p>
+      <p>JS-Ctypes: Invoke native code to add two number. (Non-Blocking)</p>
       <div class="jsctypes">
         <div class="formItem"><input id="a_" type="text" name="a_" placeholder="Value for a"></div>
         <div class="formItem"><input id="b_"  type="text" name="b_" placeholder="Value for b"></div>
